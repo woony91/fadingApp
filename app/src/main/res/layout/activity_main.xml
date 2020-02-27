@@ -7,11 +7,23 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_bart"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:onClick="fade"
         app:srcCompat="@drawable/bart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_homer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="fade"
+        android:alpha="0"
+        app:srcCompat="@drawable/homer"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
